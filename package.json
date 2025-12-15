@@ -2,8 +2,11 @@
   "name": "noel",
   "private": true,
   "type": "module",
+  "homepage": "https://Jsonic86.github.io/noel",
   "scripts": {
-    "build": "react-router build",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build/client",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
