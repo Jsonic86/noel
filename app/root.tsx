@@ -1,5 +1,4 @@
 import {
-  HashRouter,
   isRouteErrorResponse,
   Links,
   Meta,
@@ -44,9 +43,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <HashRouter>
-      <Outlet />
-    </HashRouter>
+    <Outlet />
   );
 }
 
